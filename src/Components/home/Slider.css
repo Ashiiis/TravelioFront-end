@@ -1,0 +1,36 @@
+.slider-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .card-container {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
+  
+  .arrow-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .arrow-button.prev {
+    left: 10px;
+  }
+  
+  .arrow-button.next {
+    right: 10px;
+  }
+  
+  .arrow-button img {
+    width: 24px;
+    height: 24px;
+  }
+  

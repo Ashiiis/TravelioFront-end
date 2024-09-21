@@ -1,0 +1,24 @@
+.searchbar {
+  display: flex;
+  /* align-items: center; */
+  height: 3rem;
+  width: 40rem;
+  border: solid;
+  margin: 0px auto;
+  border-radius: 50px;
+  border-color: transparent;
+  box-shadow: 0px 1px 3px grey;
+  /* position:fixed; */
+}
+
+#search {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  padding: 2px 0px 2px 10px;
+}
+#searchbtn {
+  padding: 0rem 1rem;
+  border-radius: 2rem;
+  background-color: #34e0a1;
+}

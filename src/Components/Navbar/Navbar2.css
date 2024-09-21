@@ -1,0 +1,91 @@
+.navbar2 {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center; /* Center the navbar2 items */
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  color: a9a9a9;
+  position: relative; /* Ensure relative positioning for the header */
+}
+ul {
+  display: flex;
+  align-items: baseline;
+}
+
+li {
+  display: flex;
+  font-size: 1.6rem;
+}
+
+img {
+  margin: 5pex;
+}
+.navbar2 ul li a {
+  color: #454545;
+  text-decoration: none;
+  font-weight: bold;
+}
+.navbar2 {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center; /* Center the navbar2 items */
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem;
+  position: relative; /* Ensure relative positioning for the header */
+}
+
+.icon {
+  position: absolute;
+  left: 4rem; /* Position the icon on the left side */
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar2 ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Add space between the list items */
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+.navbar2 ul li a:hover {
+  text-decoration: underline;
+}
+
+.navbar2 h1 {
+  color: #000000;
+  margin: 0 1rem; /* Add some space between the headers */
+}
+
+h1 {
+  display: flex;
+}
+
+img {
+  padding: 5px;
+}
+
+.navbar2 .right {
+  position: absolute;
+  right: 2rem; /* Position the right elements on the right side */
+  display: flex;
+  align-items: center;
+  gap: 0.1rem; /* Add space between the right elements */
+}
+
+.signin {
+  border: 3px solid black;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin:hover {
+  background-color: black;
+  color: white;
+}

@@ -1,0 +1,50 @@
+
+.navbar-1 {
+  /* margin-top:4rem; */
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .navbar-header-1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5em;
+    color: black;
+    
+  }
+  
+  .dropdown-toggle {
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .navbar-menu-1 {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-top: 1px solid #ddd;
+  }
+  
+  .navbar-menu-1 li {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+  }
+  
+  .navbar-menu-1 li:hover {
+    background-color: #f7f7f7;
+  }
+  

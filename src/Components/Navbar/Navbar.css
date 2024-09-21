@@ -1,0 +1,169 @@
+.navbar {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center; /* Center the navbar items */
+  align-items: center;
+  items-margin:20px;
+  background-color: #ffffff;
+  padding: 1rem;
+  position: relative; /* Fix the navbar at the top of the page */
+  top: 0; /* Position it at the top */
+  width: 100%; /* Ensure it spans the full width of the page */
+  z-index: 1000; /* Ensure it stays on top of other elements */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Optional: add a shadow for better visibility */
+}
+
+.icon {
+  position: absolute;
+  left: 4rem; /* Position the icon on the left side */
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem; /* Add space between the list items */
+  margin: 0; /* Reset default margin */
+  padding: 0; /* Reset default padding */
+}
+
+.navbar ul li a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+.navbar h1 {
+  color: #000000;
+  margin: 0 1rem; /* Add some space between the headers */
+}
+
+h1 {
+  display: flex;
+}
+
+img {
+  padding: 5px;
+}
+
+.navbar .right {
+  position: absolute;
+  right: 2rem; /* Position the right elements on the right side */
+  display: flex;
+  align-items: center;
+  gap: 0.1rem; /* Add space between the right elements */
+}
+
+.signin {
+  border: 3px solid black;
+  border-radius: 25px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signin:hover {
+  background-color: black;
+  color: white;
+}
+
+.fixed-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff; /* Adjust as needed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional for a shadow effect */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:100%;
+  height:102px;
+  /* padding: 10px; */
+  z-index: 1000; /* Ensure it's above other content */
+}
+.fixed-navbar p{
+  position: absolute;
+  margin-left: 4rem; /* Position the icon on the left side */
+  color: #000000;
+  font-size: 4vh;
+  font-weight: bold;
+}
+.search-bar {
+  /* padding: 8px; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: relative;
+  max-width: absolute;
+}
+.searchbar-1 {
+  
+  border: solid;
+  margin-right: -40rem;
+  border-radius: 50px;
+  border-color: transparent;
+  box-shadow: 0px 1px 3px grey;
+  /* position:fixed; */
+}
+
+#search {
+  width: 100%;
+  outline: none;
+  background-color: transparent;
+  padding: 2px 0px 2px 10px;
+}
+#searchbtn {
+  padding: 0rem 1rem;
+  border-radius: 2rem;
+  background-color: #34e0a1;
+}
+
+.item-1 ul li a {
+  position: relative;
+  /* font-size:3vh; */
+  /* margin-right:10rem; */
+  color:0000;
+}
+.items-1 ul li a{
+  margin:0vh 2vh 7vh;
+  justify-content: space-between;
+  font-size:2vh;
+  font-weight:bold;
+
+} 
+
+#a{
+  margin: 2rem;
+
+}
+.Home-1{
+  margin:0vh 2vh 7vh;
+  justify-content: space-between;
+  font-size:2vh;
+  font-weight:bold;
+}
+.service-1{
+  margin:0vh 2vh 7vh;
+  justify-content: space-between;
+  font-size:2vh;
+  font-weight:bold;
+}
+.contact-1{
+  margin:0vh 2vh 7vh;
+  justify-content: space-between;
+  font-size:2vh;
+  font-weight:bold;
+}
+.icon-1{
+  position: absolute;
+  left: 4rem; /* Position the icon on the left side */
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+}

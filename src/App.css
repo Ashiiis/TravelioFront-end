@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App h1,
+.App h2 {
+  margin: 0;
+}
+
+.App hed {
+  padding: 4vh;
+  font-size: 4rem;
+  font-weight: 800;
+  margine-left: 30vh;
+}
+
+.first h2 {
+  text-align: left;
+  margin: 0px 30vh 15px;
+}
+.heading{
+  margin-top:3rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.first h1 {
+  display: flex;
+  margin: 6vh 20vh 0vh 30vh;
+  font-weight: 2000;
+  font-size: 25px;
+}
+.second h1 {
+  display: flex;
+  margin: 6vh 20vh 0vh 30vh;
+  font-weight: 2000;
+  font-size: 25px;
+}
+.second h2 {
+  text-align: left;
+  margin: 0px 30vh 15px;
+}
+
+.card {
+  text-align: center;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card-container {
+  display: flex;
+  margin-left: 30vh;
+  margin-right: 30vh; /* Reset margin to 0 */
+  width: 100%;
+  transition: transform 1s ease; /* Smooth transition for sliding effect */
+  gap: 10px; /* Space between cards */
+}
+
+.arrow-button {
+  background-color: #fff;
+  border-radius: 40px;
+  color: white;
+  border: none;
+  /* padding: 10px; */
+  cursor: pointer;
+  position: absolute;
+  /* z-index: 1; */
+  top: 50%;
+
+  transform: translateY(-50%);
+}
+
+.prev {
+  margin-left: 29vh;
+}
+
+.next {
+  margin-left: 169vh;
+}
+
+.Plantrip{
+  margin: 4rem;
+}

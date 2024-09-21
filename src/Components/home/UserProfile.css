@@ -1,0 +1,34 @@
+.profile-container {
+    padding: 20px;
+  }
+  
+  .background-pic {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    position: relative;
+  }
+  
+  .profile-info {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: white;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .address-info {
+    margin-top: 20px;
+  }
+  
+  .address-info h3 {
+    margin-bottom: 10px;
+  }
+  
