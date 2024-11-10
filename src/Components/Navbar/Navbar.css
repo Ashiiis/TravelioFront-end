@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center; /* Center the navbar items */
   align-items: center;
-  items-margin:20px;
+  /* items-margin:20px; */
   background-color: #ffffff;
   padding: 1rem;
   position: relative; /* Fix the navbar at the top of the page */
@@ -166,4 +166,8 @@ img {
   color: #000000;
   font-size: 2rem;
   font-weight: bold;
+}
+.profile-button{
+  margin-top:10px;
+  margin-left:5px;
 }

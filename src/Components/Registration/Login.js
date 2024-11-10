@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './Login.css';
 
 function Login() {
-  const [username, setUsername] = useState('');
+  const [usernameOrEmail, setUsernameOrEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
@@ -11,12 +11,12 @@ function Login() {
     event.preventDefault();
 
     const userData = {
-      email: username, // Adjust based on your Django login API requirements
+      username_or_email: usernameOrEmail,
       password,
     };
 
     try {
-      const response = await fetch('http://localhost:8000/services/login/', {
+      const response = await fetch('http://localhost:8000/api/login/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -24,16 +24,24 @@ function Login() {
         body: JSON.stringify(userData),
       });
 
+      // Check for a 200 status code
       if (response.ok) {
         const data = await response.json();
-        localStorage.setItem('accessToken', data.access);
-        localStorage.setItem('refreshToken', data.refresh);
-        alert('Login successful');
-        // Navigate to home page with username in the URL
-        navigate('/');
+
+        // Check if the token is returned
+        if (data.token) {
+          localStorage.clear(); // Clear all items
+          localStorage.setItem('authToken', data.token);
+          console.log("Token stored:", data.token);
+          alert('Login successful');
+          // Redirect to the home page
+          navigate('/');
+        } else {
+          alert('Login failed: No token received.');
+        }
       } else {
         const data = await response.json();
-        alert(`Error: ${data.detail || 'Something went wrong'}`);
+        alert(`Error: ${data.error || 'Something went wrong'}`);
       }
     } catch (error) {
       console.error('Error:', error);
@@ -45,13 +53,13 @@ function Login() {
     <div className="login-container">
       <form className="login-form" onSubmit={handleSubmit}>
         <div className="form-group">
-          <label htmlFor="username">Username</label>
+          <label htmlFor="username_or_email">Username or Email</label>
           <input
             type="text"
-            id="username"
-            placeholder="Enter your username"
-            value={username}
-            onChange={(e) => setUsername(e.target.value)}
+            id="username_or_email"
+            placeholder="Enter your username or email"
+            value={usernameOrEmail}
+            onChange={(e) => setUsernameOrEmail(e.target.value)}
           />
         </div>
         <div className="form-group">

@@ -1,5 +1,7 @@
 import React from "react";
 import "./Navbar2.css";
+import { Link} from 'react-router-dom';
+
 
 function Navbar2() {
   return (
@@ -14,7 +16,8 @@ function Navbar2() {
         </li>
         <li>
           <img src="assets/food.svg" alt="img" />
-          <a href="#services">To Do</a>
+          <a><Link to="/convo" className="contact">Helping Hand</Link></a>
+          
         </li>
         <li>
           <img src="assets/boat.svg" alt="img" />

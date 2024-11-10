@@ -12,14 +12,14 @@ export default function Plantrip() {
     setCityName(event.target.value);
   };
 
-  const handleSearch = async () => {
+  const performSearch = async () => {
     if (!cityName) return;
     
     setLoading(true);
     setError(null);
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/get-data/', {
+      const response = await fetch('http://127.0.0.1:8001/get-data/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -40,19 +40,33 @@ export default function Plantrip() {
     }
   };
 
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+    performSearch();
+  };
+
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      performSearch();
+    }
+  };
+
   return (
     <div className='plan'>
-      <h1>Hi, I'm your AI Support</h1> 
-      <div className="searchbar-ai">
+      <h1>Hi, I'm your AI Support</h1>
+      <form onSubmit={handleFormSubmit}>
+        <div className="searchbar-ai">
         <input
-        id = 'search'
+          id='search'
           type="text"
           placeholder="Just tell me where you want to go..."
           value={cityName}
           onChange={handleInputChange}
-        />
-        <button id='searchbtn2' onClick={handleSearch}>Search</button>
+          onKeyDown={handleKeyPress}
+          />
+          <button id='searchbtn2' type="submit">Search</button>
       </div>
+      </form>
 
       {loading && <p>Loading...</p>}
       {error && <p style={{ color: 'red' }}>{error}</p>}

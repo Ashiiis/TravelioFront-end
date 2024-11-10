@@ -46,7 +46,7 @@
   padding: 4vh;
   font-size: 4rem;
   font-weight: 800;
-  margine-left: 30vh;
+  /* margine-left: 30vh; */
 }
 
 .first h2 {
@@ -120,4 +120,9 @@
 
 .Plantrip{
   margin: 4rem;
+}
+.Top-place{
+  margin-bottom:2rem;
+  font-size: 2rem;
+  font-weight:bold;
 }
