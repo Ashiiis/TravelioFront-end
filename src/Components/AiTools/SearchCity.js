@@ -17,7 +17,7 @@ const SearchCity = () => {
         setError(null);
 
         try {
-            const response = await fetch('http://127.0.0.1:8000/get-data/', {
+            const response = await fetch('https://travel-model.onrender.com/get-data/', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -6,7 +6,7 @@ function DataProcessingComponent() {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('http://localhost:8001/top-10/')
+        fetch('https://travel-model.onrender.com/top-10/')
             .then(response => response.json())
             .then(data => {
                 setData(data);
