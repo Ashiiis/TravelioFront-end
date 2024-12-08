@@ -93,10 +93,10 @@ export default function Plantrip() {
                         </div>
                         <div className="card-right"> {/* Right side for images */}
                           {place.place_img && <img src={place.place_img} alt="Place" className="card-image" />}
-                          {place.place_img_1 && <img src={place.place_img_1} alt="Place" className="card-image" />}
-                          {place.place_img_2 && <img src={place.place_img_2} alt="Place" className="card-image" />}
+                          {/* {place.place_img_1 && <img src={place.place_img_1} alt="Place" className="card-image" />} */}
+                          {/* {place.place_img_2 && <img src={place.place_img_2} alt="Place" className="card-image" />}
                           {place.place_img_3 && <img src={place.place_img_3} alt="Place" className="card-image" />}
-                          {place.place_img_4 && <img src={place.place_img_4} alt="Place" className="card-image" />}
+                          {place.place_img_4 && <img src={place.place_img_4} alt="Place" className="card-image" />} */}
                         </div>
                       </div>
                     </div>
