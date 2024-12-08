@@ -15,7 +15,9 @@ import Signup from './Components/Registration/Signup';
 import Login from './Components/Registration/Login';
 import Profile from './Components/Profile/Profile';
 import AboutSection from './Components/AboutUs/AboutSection';
-import SearchDescription from './Components/AiTools/description';
+import Hotel from './Components/hotels/Hotel';
+import ToDo from './Components/ToDo/ToDo';
+// import SearchDescription from './Components/AiTools/description';
 // import Convo from './Components/conversation/QueryComponent';
 import LocationInput from './Components/conversation/Location';
 function App() {
@@ -68,7 +70,6 @@ function App() {
                 ))}
               </Slider>
               <Plantrip />
-              <SearchDescription/>
               <Footer />
             </>
           } />
@@ -80,6 +81,9 @@ function App() {
           <Route path="*" element={<div>404 Not Found</div>} />
           <Route path="/convo" element={<LocationInput/>}/>
           <Route path="/about" element={<AboutSection/>}/>
+          <Route path="/hotels" element={<Hotel/>}/>
+          <Route path="/todo" element={<ToDo/>}/>
+
         </Routes>
       </div>
     </Router>

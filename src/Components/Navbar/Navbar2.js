@@ -12,7 +12,7 @@ function Navbar2() {
         </li>
         <li>
           <img src="assets/hotel.svg" alt="img" />
-          <a href="#about">Hotels</a>
+          <a><Link to="/hotels" className="contact">Hotels</Link></a>
         </li>
         <li>
           <img src="assets/food.svg" alt="img" />
@@ -25,7 +25,7 @@ function Navbar2() {
         </li>
         <li>
           <img src="assets/todo.svg" alt="img" />
-          <a href="#contact">Plan The Day</a>
+          <a><Link to="/todo" className="contact">Plan The Day</Link></a>
         </li>
       </ul>
     </nav>

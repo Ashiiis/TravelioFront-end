@@ -57,7 +57,7 @@ function Navbar() {
           <li><Link to="/" className="Home">Home</Link></li>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/services">Services</Link></li>
-          <li><Link to="/contact" className="contact">Contact</Link></li>
+          <li><Link to="/contect" className="contact">Contact</Link></li>
         </ul>
         <div className="right">
           <h1><img src="assets/earth.svg" alt="img"/> | INR</h1>
