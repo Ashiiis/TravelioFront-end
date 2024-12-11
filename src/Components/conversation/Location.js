@@ -14,7 +14,7 @@ const LocationInput = () => {
         try {
             const token = localStorage.getItem('authToken');
             const response = await axios.post(
-                'http://localhost:8000/guide/location/',  // API endpoint
+                'https://travel-chat-3.onrender.com/guide/location/',  // API endpoint
                 { city },  // Send only city
                 { headers: { Authorization: `Token ${token}` } }
             );
@@ -31,7 +31,7 @@ const LocationInput = () => {
         try {
             const token = localStorage.getItem('authToken');
             const response = await axios.get(
-                'http://localhost:8000/guide/match-users/',
+                'https://travel-chat-3.onrender.com/guide/match-users/',
                 { headers: { Authorization: `Token ${token}` } }
             );
             const users = response.data;
