@@ -52,7 +52,7 @@ function Navbar() {
   return (
     <>
       <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
-        <div className='icon'>Travel.Io</div>
+        <div className='icon'>Path Finder</div>
         <ul>
           <li><Link to="/" className="Home">Home</Link></li>
           <li><Link to="/about">About</Link></li>
