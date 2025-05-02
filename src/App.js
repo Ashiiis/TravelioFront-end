@@ -49,7 +49,7 @@ function App() {
               <Searchbar />
               <div className="first">
                 <h1><b>Go on an award-winning adventure</b></h1>
-                <h2>2024's Best of The Best Places To Go</h2>
+                <h2>2025's Best of The Best Places To Go</h2>
               </div>
               <div className='Top-place'>
               <h2>Top Places by Travelers</h2>
