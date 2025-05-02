@@ -74,7 +74,7 @@ function Navbar() {
       {isScrolled && (
         <div className='fixed-nav'>
           <div className="fixed-navbar">
-            <div className="icon-1">Travel.Io</div>
+            <div className="icon-1">Path Finder</div>
             <div className="searchbar-1">
               <input id='search' type="text" placeholder="See whatever you like...."/>
               <button id='searchbtn'>Search</button>
