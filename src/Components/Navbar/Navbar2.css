@@ -3,10 +3,10 @@
   display: flex;
   justify-content: center; /* Center the navbar2 items */
   align-items: center;
-  background-color: #ffffff;
+  background-color: #e1d0c3;
   padding: 1rem;
-  color: a9a9a9;
-  background-color:#e1d0c3;
+  color: #a9a9a9;
+/*   background-color:#e1d0c3; */
   position: relative; /* Ensure relative positioning for the header */
 }
 ul {
