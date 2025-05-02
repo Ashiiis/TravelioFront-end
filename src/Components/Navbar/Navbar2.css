@@ -32,7 +32,6 @@ img {
   display: flex;
   justify-content: center; /* Center the navbar2 items */
   align-items: center;
-  background-color: #ffffff;
   padding: 1rem;
   position: relative; /* Ensure relative positioning for the header */
 }
