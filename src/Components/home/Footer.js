@@ -70,7 +70,7 @@ export default function Footer() {
           </div>
       </div>
     </div>
-    <p>All Right are reserved by Ashish Raghav and Kunal Singh (CRSSIET)</p>
+    <p>All Right are reserved by Ashish Raghav Roshan Sharma(CRSSIET)</p>
 </footer>
 
     </div>
